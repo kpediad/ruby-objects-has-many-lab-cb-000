@@ -23,7 +23,7 @@ class Author
   def self.all
     @@all
   end
-  
+
   def self.post_count
     self.all.collect{|author| author.posts}.inject(:+)
   end
