@@ -23,7 +23,7 @@ class Artist
   def self.all
     @@all
   end
-  
+
   def self.song_count
     self.all.collect{|artist| artist.songs.count}.inject(:+)
   end
