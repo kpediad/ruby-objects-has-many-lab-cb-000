@@ -25,6 +25,6 @@ class Author
   end
 
   def self.post_count
-    self.all.collect{|author| author.posts}.inject(:+)
+    self.all.collect{|author| author.posts.count}.inject(:+)
   end
 end
